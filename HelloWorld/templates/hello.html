@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>系统学习html5和Css3</title>
+    <meta name="description" content="系统学习html5和Css3">
+    <meta name="keywords" content="html5,css3">
+    <link href="css/main.css" rel="stylesheet">
+    <script type="text/javascript"  src="script/main2.js"></script>
+    <style>
+        h1{
+	        color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<body onload="init()">
+    <h2>{{ hello }}</h2>
+    <header>
+        <div class="banner_container">
+            <ul id="nav" class="nav">
+            <li class="banner"><img src="images/b1.jpg" alt="" class="bg"></li>
+            <li class="banner"><img src="images/b2.jpg" alt="" class="bg"></li>
+            <li class="banner"><img src="images/b3.jpg" alt="" class="bg"></li>
+            <li class="banner"><img src="images/b4.jpg" alt="" class="bg"></li>
+            </ul>
+        </div>
+        <div class="arrows">
+            <span class="arrow" style="float:left" onclick="changeItem(false)"> < </span>
+            <span class="arrow" style="float:right" onclick="changeItem(true)"> > </span>
+        </div>
+        <div class="nots">
+            <div class="not current" onclick="changeItem2(this)"></div>
+            <div class="not" onclick="changeItem2(this)"></div>
+            <div class="not" onclick="changeItem2(this)"></div>
+            <div class="not" onclick="changeItem2(this)"></div>
+        </div>
+    </header>
+    <nav>
+        <h4>窗口大小：</h4>
+        <p>window.innerHeight = window.innerHeight</p>
+        <p>window.innerWidth = {window.innerWidth}</p>
+        <p>window.outerHeight = {window.outerHeight}</p>
+        <p>window.outerWidth = {window.outerWidth}</p>
+        <button onClick={this.open}>open a url</button>
+        <pre>预定义文本</pre>
+        <blockquote>块级引用文本</blockquote>
+        <p>随便写的一段话啊，主要就是展示下
+            <cite>行内引用文本</cite>的样子</p>
+        <i>斜体</i>
+        <p>x<sup>2</sup> + S<sub>1</sub></p>
+        <form id="form1" method="get" action="" encType="">
+            <label for="username">姓名：</label>
+            <input type="text" name="username" placeholder="请输入3-5未的用户名" maxLength="5" minLength="3" />
+            <br/> 文件上传域：
+            <input name="file" type="file" />
+            <br/> 性别：
+            <input type="checkbox" name="sex" value="男" />男
+            <input type="checkbox" name="sex" value="女" />女
+            <br/>
+            <input id="submit_img" type="image" src="opacity.jpg" onClick="saveStorage()" />
+            <br/>
+            <input type="reset" value="重设表单" />
+        </form>
+        <video src=""></video>
+    </nav>
+</body>
+
+</html>
